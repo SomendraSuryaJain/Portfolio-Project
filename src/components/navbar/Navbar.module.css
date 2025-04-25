@@ -1,0 +1,100 @@
+/* Reset and base styling */
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* Navbar container */
+  .header {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.85);
+    /* position: fixed; */
+    z-index: 1000;
+  }
+  
+  /* Nav styles */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Brand / Logo */
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Nav list */
+  .navbarList {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  
+  /* Link styles */
+  .navbarList li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .navbarList li a:hover {
+    background-color: #ffffff22;
+    color: #00ffff;
+  }
+
+  /* .navbarList li a:focus {
+    background-color: #ffffff22;
+    color: #00ffff;
+  } */
+  
+  /* Active link */
+  .active {
+    border-bottom: 2px solid #00ffff;
+    border-top: 2px solid #00ffff;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 5%;
+      height: auto;
+    }
+  
+    .navbarList {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .navbarList li {
+      width: 100%;
+    }
+  
+    .navbarList li a {
+      display: block;
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,77 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#ServicesPage{
+    width: 100vw;
+    height: 90vh;
+    background-color: #000000cc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 30px;
+}
+
+#ServicesPage>h1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: aqua;
+}
+
+.ServicesPage_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ServicesPage_card .card1{
+    width: 250px;
+    height: 280px;
+    background-color: #1a1a1a6a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-align: center;
+}
+
+.icon{
+    color: aqua;
+    font-size: 20px;
+}
+
+.ServicesPage_card .card1 > h2{
+    font-size: 25px;
+}
+
+.ServicesPage_card .card1 > p{
+    font-size: 15px;
+}
+
+.ServicesPage_card .card1 > button{
+    width: 40%;
+    height: 35px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: aqua;
+    font-size: 15px;
+}
+

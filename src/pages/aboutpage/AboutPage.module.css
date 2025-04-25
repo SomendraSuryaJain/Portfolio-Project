@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#AboutPage {
+  width: 100%;
+  height: 90vh;
+  background-color: #000000ad;
+  display: flex;
+}
+
+.AboutPage_Content {
+  width: 60%;
+  /* background-color: rgb(5, 233, 157); */
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-top: 140px;
+  padding-left: 100px;
+  gap: 10px;
+}
+
+.AboutPage_Content > h1 {
+  font-size: 50px;
+}
+
+.AboutPage_Content > h3 {
+  font-size: 30px;
+}
+
+.AboutPage_Content > p {
+  font-size: 18px;
+}
+
+.AboutPage_btns{
+  display: flex;
+  gap: 10px;
+}
+
+.AboutPage_btns > button {
+  width: 20%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: aqua;
+  font-size: 15px;
+}
+
+/* Design right side of the about page */
+
+.AboutPage_img {
+  width: 40%;
+  height: 625px;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AboutPage_img div {
+  height: 60%;
+  width: 60%;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+.AboutPage_img div > img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}

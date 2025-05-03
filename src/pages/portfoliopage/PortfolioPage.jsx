@@ -7,6 +7,24 @@ const PortfolioPage = () => {
       <div id={styles.header}>
       <h1>Latest Projects</h1>
       <div id={styles.card}>
+      <section className={styles.sec}>
+        <img src="./Project 6.jpg" alt="" />
+          <div className={styles.project_data}>
+            <h1>Portfolio</h1>
+            <div className={styles.project_language}>
+              <ul>
+                  <li>React.js</li>
+                  <li>Routing</li>
+                  <li>CSS 3</li>
+                  <li>HTML 5</li>
+              </ul>
+            </div>
+            <div className={styles.project_link}>
+              <a href="" target="_blank">View Code</a>
+              <a href="">Go to Site</a>
+            </div>
+          </div>
+        </section>
         <section className={styles.sec}>
           <img src="./Project1.jpg" alt="image" />
           <div className={styles.project_data}>
@@ -96,10 +114,7 @@ const PortfolioPage = () => {
               <a href="">Go to Site</a>
             </div>
           </div>
-        </section>
-        <section className={styles.sec}></section>
-        {/* <section className={styles.sec}></section>
-        <section className={styles.sec}></section> */}
+        </section>          
       </div>
     </div> 
     </> 

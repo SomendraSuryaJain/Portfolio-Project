@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from "./Navbar.module.css";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+
+  const navigate = useNavigate()
+
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <div className={styles.logo}>MyPortfolio</div>
+        <div onClick={()=>navigate('/')} className={styles.logo}>MyPortfolio</div>
         <ul className={styles.navbarList}>
           <li><NavLink to="/" className={({ isActive }) => isActive ? styles.active : ''}>Home</NavLink></li>
           <li><NavLink to="/about" className={({ isActive }) => isActive ? styles.active : ''}>About</NavLink></li>

@@ -1,7 +1,11 @@
 import React from 'react'
 import styles from "./AboutPage.module.css"
+import { useNavigate } from 'react-router-dom';
 
 const AboutPage = () => {
+
+    const navigate = useNavigate()
+
     return (
         <div id={styles.AboutPage}>
             <div className={styles.AboutPage_img}>
@@ -14,15 +18,12 @@ const AboutPage = () => {
                 <h1>About Me</h1>
                 <h3>Full Stack Developer</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
-                    excepturi unde enim. Vel molestiae ratione possimus consectetur magni
-                    ab magnam autem sint iusto sed at quos, error suscipit saepe eveniet!
-                    Repellendus, nulla perferendis laudantium natus exercitationem sed
-                    minus? Obcaecati pariatur voluptatibus amet corporis id deleniti
-                    repellat iure accusamus rerum tempora?
+                Hi, I'm Somendra Surya Jain, a passionate MERN stack developer with a strong foundation in JavaScript, React.js, and backend development. I love building web applications that are efficient, scalable, and user-friendly. With expertise in C, HTML5, CSS3, Bootstrap, and Tailwind CSS, I continuously explore new technologies and improve my problem-solving skills.
+                Currently, I'm enhancing my backend skills with Node.js and MongoDB while working on real-world projects. I enjoy collaborating on innovative ideas and contributing to open-source projects.
                 </p>
                 <div className={styles.AboutPage_btns}>
-                    <button type="submit">Read More</button>
+                    <button onClick={()=>navigate('/about')
+                    } type="submit">Read More</button>
                 </div>
             </div>
         </div>

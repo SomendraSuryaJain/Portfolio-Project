@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#DatabaseSkills {
+  width: 100vw;
+  height: 90vh;
+  background-color: #000000cc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+#DatabaseSkills > h1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: aqua;
+}
+
+.DatabaseSkills_card {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.DatabaseSkills_card .card1 {
+  width: 250px;
+  height: 170px;
+  background-color: #1a1a1a6a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow:  5px 5px 5px 5px rgba(24, 240, 244, 0.2);
+}
+
+.icon {
+  color: aqua;
+  font-size: 35px;
+}
+
+.DatabaseSkills_card .card1 > h2 {
+  font-size: 25px;
+}
+
+.DatabaseSkills_card .card1 > p {
+  font-size: 15px;
+}
+
+.DatabaseSkills_card .card1 > button {
+  width: 40%;
+  height: 35px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: aqua;
+  font-size: 15px;
+  cursor: pointer;
+}

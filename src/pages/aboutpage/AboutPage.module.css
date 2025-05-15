@@ -10,7 +10,7 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .AboutPage_Content {
-  width: 60%;
+  width: 57%;
   /* background-color: rgb(5, 233, 157); */
   display: flex;
   flex-direction: column;

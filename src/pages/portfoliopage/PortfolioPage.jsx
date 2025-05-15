@@ -20,7 +20,7 @@ const PortfolioPage = () => {
               </ul>
             </div>
             <div className={styles.project_link}>
-              <a href="" target="_blank">View Code</a>
+              <a href="https://github.com/SomendraSuryaJain/Portfolio-Project" target="_blank">View Code</a>
               <a href="">Go to Site</a>
             </div>
           </div>

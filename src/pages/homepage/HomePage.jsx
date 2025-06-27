@@ -36,7 +36,7 @@ const HomePage = () => {
           </span>
         </div>
         <div className={styles.HomePage_btns}>
-          <a className={styles.download} href="../Assets/Biodata_Somendra Surya Jain.docs" download>Download CV
+          <a className={styles.download} href="Somendra_Jain_Resume.pdf" download>Download CV
           <FaDownload />
           </a>
         </div>

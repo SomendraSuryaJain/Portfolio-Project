@@ -34,12 +34,13 @@ body {
 }
 
 .TestingSkills_card {
+  height: 70%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  justify-content: center;
+  justify-items: center;
   align-items: center;
-  gap: 40px;
+  background-color: aqua;
 }
 
 .TestingSkills_card .card1 {

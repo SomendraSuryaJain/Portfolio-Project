@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import styles from "./ContactPage.module.css"
 
-const ContactPage = () => {
+const ContactPage = () => { 
+
+  const res = fetch("")
+
 let [data, setData] = useState({
   username: "",
   email: "",
@@ -34,10 +37,10 @@ function formSubmit(e) {
       <h1>Contact Me!</h1>
       <form className={styles.form} onSubmit={formSubmit}>
         <div className={styles.formgroup}>
-          <input type="text" placeholder="Full Name" name="username" value={data.username} onChange={handleChange}/>
-          <input type="email" placeholder="E-mail" name="email" value={data.email} onChange={handleChange}/>
-          <input type="phone" placeholder="Phone No" name="phoneno" value={data.phoneno} onChange={handleChange}/>
-          <input type="text" placeholder="Subject" name="subject" value={data.subject} onChange={handleChange}/>
+          <input type="text" placeholder="Full Name" name="username" required value={data.username} onChange={handleChange}/>
+          <input type="email" placeholder="E-mail" name="email" required value={data.email} onChange={handleChange}/>
+          <input type="phone" placeholder="Phone No" name="phoneno" required value={data.phoneno} onChange={handleChange}/>
+          <input type="text" placeholder="Subject" name="subject" required value={data.subject} onChange={handleChange}/>
         </div>
           <textarea placeholder='Text message!' name="textarea" value={data.textarea} onChange={handleChange}></textarea>
           <button type="submit" >Send Message</button>

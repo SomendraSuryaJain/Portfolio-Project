@@ -12,7 +12,7 @@ const PortfolioPage = () => {
           <div className={styles.project_data}>
             <h1>Portfolio</h1>
             <div className={styles.project_language}>
-              <ul>
+              <ul className={styles.langtype}>
                   <li>React.js</li>
                   <li>Routing</li>
                   <li>CSS 3</li>
@@ -30,7 +30,7 @@ const PortfolioPage = () => {
           <div className={styles.project_data}>
             <h1>Login/SignUp Authentication</h1>
             <div className={styles.project_language}>
-              <ul>
+              <ul className={styles.langtype}>
                 <li>React.js</li>
                 <li>Axios</li>
                 <li>CSS3</li>
@@ -48,7 +48,7 @@ const PortfolioPage = () => {
           <div className={styles.project_data}>
             <h1>User Hive/CRUD Operation</h1>
             <div className={styles.project_language}>
-              <ul>
+              <ul className={styles.langtype}>
                   <li>React.js</li>
                   <li>Axios</li>
                   <li>CSS 3</li>
@@ -66,7 +66,7 @@ const PortfolioPage = () => {
           <div className={styles.project_data}>
             <h1>Dashboard</h1>
             <div className={styles.project_language}>
-              <ul>
+              <ul className={styles.langtype}>
                   <li>React.js</li>
                   <li>JS</li>
                   <li>CSS 3</li>
@@ -84,7 +84,7 @@ const PortfolioPage = () => {
           <div className={styles.project_data}>
             <h1>Todo App</h1>
             <div className={styles.project_language}>
-              <ul>
+              <ul className={styles.langtype}>
                   <li>React.js</li>
                   <li>JS</li>
                   <li>CSS 3</li>
@@ -102,7 +102,7 @@ const PortfolioPage = () => {
           <div className={styles.project_data}>
             <h1>Calculator</h1>
             <div className={styles.project_language}>
-              <ul>
+              <ul className={styles.langtype}>
                   <li>React.js</li>
                   <li>JS</li>
                   <li>CSS 3</li>

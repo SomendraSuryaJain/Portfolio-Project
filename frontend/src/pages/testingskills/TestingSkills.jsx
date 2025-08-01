@@ -1,7 +1,10 @@
 import React from 'react'
 import styles from "./TestingSkills.module.css"
+import { useNavigate } from 'react-router-dom';
 
 const TestingSkills = () => {
+
+ const navigate = useNavigate();
   return (
     <>
                   <div id={styles.TestingSkills}>
@@ -36,10 +39,13 @@ const TestingSkills = () => {
                           <p>Monkey testing is a type of random testing where the application is tested with random inputs or actions to see if it crashes or behaves unexpectedly.</p>
                         </div>
                         <div className={styles.card1}>
-                          <h2>Bug Life Cycle in Testing</h2>
+                          <h2>Bug Life Cycle</h2>
                           <p>The bug life cycle is the process a defect goes through from identification to closure, including stages like New, Assigned, In Progress, Fixed, Retested, and Closed.</p>
                         </div>
                     </section>
+                    <div className={styles.btn}>
+                      <button onClick={()=>navigate('/skills')}>Back!</button>
+                    </div>
                   </div>
         </>
   );

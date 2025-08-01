@@ -36,7 +36,7 @@ body {
 .DatabaseSkills_card {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 60px;
 }
 
 .DatabaseSkills_card .card1 {
@@ -67,7 +67,7 @@ body {
   font-size: 15px;
 }
 
-.DatabaseSkills_card .card1 > button {
+/* .DatabaseSkills_card .card1 > button {
   width: 40%;
   height: 35px;
   padding: 10px;
@@ -76,4 +76,22 @@ body {
   background-color: aqua;
   font-size: 15px;
   cursor: pointer;
+} */
+
+.btn{
+  width: 100%;
+  height: auto;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn>button{
+  width: 200px;
+  height: 70px;
+  font-size: 40px;
+  background-color: aqua;
+  color: white;
+  border-radius: 50px;
 }
